@@ -1,0 +1,47 @@
+Name	Label	Variable Type
+ballot	Ballot used for interview	n/a
+rincome	Respondents income	Factor
+income	Total family income	Factor
+earnrs	How many in family earned money	Continuous
+unrelat	Number in household not related	Continuous
+adults	Household members 18 yrs and older	Continuous
+teens	Household members 13 thru 17 yrs old	Continuous
+preteen	Household members 6 thru 12 yrs old	Continuous
+babies	Household members less than 6 yrs old	Continuous
+hompop	Number of persons in household	Continuous
+region	Region of interview	Factor
+xnorcsiz	Expanded norc. size code	n/a
+srcbelt	Src beltcode	n/a
+localnum	Number of employees: rs work site	Factor
+supervis	Does r supervise others at work in main job	Factor
+stress	How often does r find work stressful	Factor
+satfin	Satisfaction with financial situation	Factor
+satjob	Job or housework	Factor
+health	Condition of health	Factor
+happy	General happiness	Factor
+partyid	Political party affiliation	Factor
+size	Size of place in 1000s	Factor
+born	Was r born in this country	Factor
+famdif16	Reason not living with parents	Factor
+marital	Marital status	Factor
+indus10	Rs industry code (naics 2007)	Factor
+occ10	Rs census occupation code (2010)	Factor
+wrkslf	R self-emp or works for somebody	Factor
+evwork	Ever work as long as one year	Factor
+hrs2	Number of hours usually work a week	Continuous
+hrs1	Number of hours worked last week	continuous
+wrkstat	Labor force status	Factor
+id_	Respondent id number	ID
+divorce	Ever been divorced or separated	Factor
+spwrksta	Spouse labor force status	Factor
+childs	Number of children	Continuous
+family16	Living with parents when 16 yrs old	Factor
+mobile16	Geographic mobility since age 16	Factor
+reg16	"Region of residence, age 16"	Factor
+res16	Type of place lived in when 16 yrs old	Factor
+race	Race of respondent	Factor
+sex	Respondents sex	Factor
+degree	Rs highest degree	Factor
+educ	Highest year of school completed	Factor
+age	Age of respondent	Continuous
+year	Gss year for this respondent                       	Year

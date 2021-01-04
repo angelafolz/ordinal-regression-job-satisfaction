@@ -1,0 +1,81 @@
+made model
+Call: mvord(formula = MMO(Job.or.housework, Respondent.id.number, Gss.year.for.this.respondent) ~
+    0 + Age.of.respondent, data = GSS_job_sat, error.structure = cor_ar1(~1),
+    link = mvlogit(), PL.lag = 2)
+
+Formula: MMO(Job.or.housework, Respondent.id.number, Gss.year.for.this.respondent) ~
+    0 + Age.of.respondent
+
+   link threshold nsubjects ndim logPL  CLAIC  CLBIC fevals
+mvlogit  flexible        76    2 -75.2 168.29 189.13   8794
+
+Thresholds:
+                                           Estimate Std. Error z value Pr(>|z|)
+2016 2 A little dissat|3 Mod  satisfied    -1.66498    1.43929 -1.1568   0.2474
+2016 3 Mod  satisfied|4 Very satisfied      1.29200    1.42277  0.9081   0.3638
+2018 1 Very dissatisfied|2 A little dissat -2.77973    2.08354 -1.3341   0.1822
+2018 2 A little dissat|3 Mod  satisfied    -0.50713    1.66373 -0.3048   0.7605
+2018 3 Mod  satisfied|4 Very satisfied      0.70563    1.57010  0.4494   0.6531
+
+Coefficients:
+                    Estimate Std. Error z value Pr(>|z|)
+Age.of.respondent 1 0.017938   0.030242  0.5932   0.5531
+Age.of.respondent 2 0.018041   0.031369  0.5751   0.5652
+
+Error Structure:
+              Estimate Std. Error z value Pr(>|z|)
+(Intercept) 6.0509e+00 1.1242e+06       0        1
+$call
+mvord(formula = MMO(Job.or.housework, Respondent.id.number, Gss.year.for.this.respondent) ~
+    0 + Age.of.respondent, data = GSS_job_sat, error.structure = cor_ar1(~1),
+    link = mvlogit(), PL.lag = 2)
+
+$formula
+MMO(Job.or.housework, Respondent.id.number, Gss.year.for.this.respondent) ~
+    0 + Age.of.respondent
+
+$info
+      c("link", object$rho$link$name) c("threshold", object$rho$threshold)
+                                 link                            threshold
+value                         mvlogit                             flexible
+      c("nsubjects", object$rho$n) c("ndim", object$rho$ndim)
+                         nsubjects                       ndim
+value                           76                          2
+      c("logPL", round(-object$rho$objective, 2))
+                                            logPL
+value                                       -75.2
+      c("CLAIC", ifelse(object$rho$se, round(object$rho$claic, 2),
+                                                              CLAIC
+value                                                        168.29
+      c("CLBIC", ifelse(object$rho$se, round(object$rho$clbic, 2),
+                                                              CLBIC
+value                                                        189.13
+      c("fevals", if (is.null(object$rho$optRes$fevals)) NA else object$rho$optRes$fevals)
+                                                                                    fevals
+value                                                                                 8794
+
+$thresholds
+                                             Estimate Std. Error    z value
+2016 2 A little dissat|3 Mod  satisfied    -1.6649829   1.439291 -1.1568074
+2016 3 Mod  satisfied|4 Very satisfied      1.2919997   1.422771  0.9080869
+2018 1 Very dissatisfied|2 A little dissat -2.7797330   2.083536 -1.3341421
+2018 2 A little dissat|3 Mod  satisfied    -0.5071320   1.663735 -0.3048154
+2018 3 Mod  satisfied|4 Very satisfied      0.7056272   1.570099  0.4494158
+                                            Pr(>|z|)
+2016 2 A little dissat|3 Mod  satisfied    0.2473510
+2016 3 Mod  satisfied|4 Very satisfied     0.3638323
+2018 1 Very dissatisfied|2 A little dissat 0.1821573
+2018 2 A little dissat|3 Mod  satisfied    0.7605068
+2018 3 Mod  satisfied|4 Very satisfied     0.6531317
+
+$coefficients
+                     Estimate Std. Error   z value  Pr(>|z|)
+Age.of.respondent 1 0.0179383 0.03024158 0.5931667 0.5530696
+Age.of.respondent 2 0.0180407 0.03136912 0.5751102 0.5652168
+
+$error.structure
+            Estimate Std. Error      z value  Pr(>|z|)
+(Intercept) 6.050904    1124212 5.382352e-06 0.9999957
+
+attr(,"class")
+[1] "summary.mvord"
